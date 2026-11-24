@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-50: #eef7f3;
+  --color-brand-100: #d5ebe1;
+  --color-brand-200: #a9d6c3;
+  --color-brand-500: #138a62;
+  --color-brand-600: #0b6e4f;
+  --color-brand-700: #09573f;
+  --color-brand-900: #063828;
+  --color-accent-400: #f8b733;
+  --color-accent-500: #f4a300;
+  --color-accent-600: #d48d00;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply bg-brand-600 text-white hover:bg-brand-700;
+}
+
+.btn-secondary {
+  @apply border border-slate-300 bg-white text-slate-800 hover:bg-slate-100;
+}
+
+.btn-ghost {
+  @apply text-slate-600 hover:bg-slate-100;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200;
+}
+
+.label {
+  @apply block text-xs font-semibold uppercase tracking-wide text-slate-500;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}

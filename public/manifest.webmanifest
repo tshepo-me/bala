@@ -1,0 +1,12 @@
+{
+  "name": "Bala",
+  "short_name": "Bala",
+  "description": "Compare grocery specials across South African retailers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0b6e4f",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
